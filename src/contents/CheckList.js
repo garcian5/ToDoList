@@ -6,9 +6,16 @@ function CheckList() {
 
     let tod = timeOfDay();
     let hod = hrOfDay();
+
+    let cLstStyles = {
+        backgroundColor: "#F6F39F"
+    }
+
+    if (tod === "afternoon") cLstStyles.backgroundColor = "#F6D69F";
+    else if (tod === "night") cLstStyles.backgroundColor = "#3D3354";
     
-    return (        
-        <div>
+    return (
+        <div style={cLstStyles}>
             <h4>Good {tod}!</h4>
             <h4>It is currently {hod} in the {tod} where you are, here are your To Do List.</h4>
             
