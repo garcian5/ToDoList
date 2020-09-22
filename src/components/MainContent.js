@@ -1,10 +1,9 @@
 import React from "react";
-import CheckList from "./CheckList.js";
+import CheckList from "../contents/CheckList";
 
 function MainContent() {
     return (
         <main>
-            This is the main content.
             <CheckList />
         </main>
         )
