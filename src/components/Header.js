@@ -8,12 +8,16 @@ function Header() {
 
 	let cLstStyles = {
 		backgroundColor: "rgba(186, 152, 3, 0.32)",		
-		margin: 50,
-		padding: 10,
+		marginRight: 250,
+		marginLeft: 250,
+		marginTop: 50,
+		marginBottom: 50,
+		padding: 20,
 		fontFamily: "Roboto, sans-serif",
 		fontWeight: 100,
 		fontSize: 15,
-		color: "#333333"
+		color: "#666666",
+		borderRadius: "50%"
 	}
 
 	// change background color depending on the times of the day
