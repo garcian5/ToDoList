@@ -3,7 +3,10 @@ import CheckList from "../contents/CheckList";
 
 function MainContent() {
     return (
-        <main>
+        <main className="todo-list">
+            <CheckList />
+            <CheckList />
+            <CheckList />
             <CheckList />
         </main>
         )

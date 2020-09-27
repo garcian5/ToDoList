@@ -15,6 +15,9 @@ export const timeOfDay = () => {
     return TOD;
 }
 
+/**
+ * calculate the Time of the day and return a readable time.
+ * */
 export const hrOfDay = () => {
     const date = new Date();
     let hour = date.getHours();
@@ -28,7 +31,7 @@ export const hrOfDay = () => {
     } else {
         tod = 'am';
     }
-    let time = `${hour}:${date.getMinutes()} ${tod}`;
+    let time = `${hour}:${date.getMinutes() > 9 ? date.getMinutes() : '0' + date.getMinutes()} ${tod}`;
 
     return time;
 }
