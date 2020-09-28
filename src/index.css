@@ -41,14 +41,14 @@ body {
     color: #333333;
 }
 
-input[type=checkbox] {
+.chk-box {
     margin-right: 10px;
     font-size: 30px;
 }
 
-    input[type=checkbox]:focus {
-        outline: 0;
-    }
+.chk-box:focus {
+    outline: 0;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

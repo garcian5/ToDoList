@@ -4,8 +4,8 @@
     "\\src",
     "\\src\\components",
     "\\src\\contents",
-    "\\src\\scripts"
+    "\\src\\data"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\components\\MainContent.js",
   "PreviewInSolutionExplorer": false
 }

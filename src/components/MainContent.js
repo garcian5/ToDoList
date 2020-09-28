@@ -2,23 +2,24 @@ import React from "react";
 import CheckList from "../contents/CheckList";
 import toDoData from "../data/tododata"
 
-function MainContent() {
+class MainContent extends React.Component {
 
-    const checkList = toDoData.map((data) => {
+    render() {
+        const checkList = toDoData.map((data) => {
+            return (
+                <CheckList
+                    key={data.id}
+                    data={data}
+                />
+            )
+        });
+
         return (
-            <CheckList
-                key={data.id}
-                text={data.text}
-                completed={data.completed}
-            />
+            <main className="todo-list">
+                {checkList}
+            </main>
         )
-    });
-
-    return (
-        <main className="todo-list">
-            {checkList}
-        </main>
-        )
+    }
 }
 
 export default MainContent
