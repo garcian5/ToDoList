@@ -1,23 +1,6 @@
 import React from "react"
 
-class CheckList extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            complete: false
-        }
-        // bind the method made to our own class to avoid a typeerror
-        this.handleChange = this.handleChange.bind(this);
-    }
-
-    /**
-     * A method that handles the if the checkbox is clicked or not.
-     * Changes the state of the box to clicked or not clicked.
-     * */
-    handleChange() {
-        this.setState({ complete: !this.state.complete })
-    }
-
+class CheckList extends React.Component {    
     render() {
         return (
             <div>
@@ -25,8 +8,9 @@ class CheckList extends React.Component {
                 <div className="todo-item">
                     <label id="label1">
                         <input className="chk-box" type="checkbox"
-                            onChange={this.handleChange}
-                            defaultChecked={this.props.data.completed} />
+                            checked={this.props.data.completed}
+                            onChange={() => this.props.handleChange(this.props.data.id)}
+                        />
                         {this.props.data.text}
                     </label><br />
                 </div>

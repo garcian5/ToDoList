@@ -6,9 +6,31 @@ class MainContent extends React.Component {
     constructor() {
         super();
         this.state = {
-            clist: toDoData
+            clist: toDoData // copy of tododata in object state
         }
+        // bind the method made to our own class to avoid a typeerror
+        this.handleChange = this.handleChange.bind(this);
     }
+
+    /**
+     * A method that handles the if the checkbox is clicked or not.
+     * Changes the state of the box to clicked or not clicked.
+     * */
+    handleChange(lst_id) {
+        this.setState(prevState => {
+            const updatedTodos = prevState.clist.map(clist => {
+                // return the same clist object with flipped completed value if the id is the same
+                // return the same clist object with no change if not.
+                return clist.id === lst_id ? { ...clist, completed: !clist.completed } : clist;
+            })
+
+            // return the updated list
+            return {
+                clist: updatedTodos
+            }
+        })
+    }
+
     render() {
         // map through the todo list data and pass them as props
         // to the checklist component
@@ -17,6 +39,7 @@ class MainContent extends React.Component {
                 <CheckList
                     key={data.id}
                     data={data}
+                    handleChange={this.handleChange}
                 />
             )
         });

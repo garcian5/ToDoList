@@ -3,8 +3,7 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\contents",
-    "\\src\\data"
+    "\\src\\contents"
   ],
   "SelectedNode": "\\src\\components\\MainContent.js",
   "PreviewInSolutionExplorer": false
