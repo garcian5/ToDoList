@@ -31,7 +31,18 @@ export const hrOfDay = () => {
     } else {
         tod = 'am';
     }
-    let time = `${hour}:${date.getMinutes() > 9 ? date.getMinutes() : '0' + date.getMinutes()} ${tod}`;
-
+    //let time = `${hour}:${date.getMinutes() > 9 ? date.getMinutes() : '0' + date.getMinutes()}:${date.getSeconds()} ${tod}`;
+    let time = `${hour}:${date.getMinutes() > 9 ? date.getMinutes() : '0' + date.getMinutes()} ${tod}`;    
     return time;
+}
+
+export const styling = () => {
+    let cLstStyles = {
+        backgroundColor: "rgba(186, 152, 3, 0.32)",
+        margin: "auto",
+        height: 250,
+        width: 350,
+        borderRadius: "50%"
+    };
+    return cLstStyles;
 }
