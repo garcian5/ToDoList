@@ -43,6 +43,7 @@ class Header extends React.Component {
 	/**
 	 * ***previously used componentWillMount() and found out that this is soon to be depracated***
 	 * this method is a lifecycle method that will be invoked immediately after a component is mounted
+	 * this method will only run once
 	 * this method will call the updateTime() method and update our time state every 1 second.
 	 * */
 	componentDidMount() {
@@ -51,12 +52,12 @@ class Header extends React.Component {
 
 	render() {			
 		return (
-			<header style={this.timeStyle()}>
+			<header style={this.timeStyle()}>				
 				<div className="greeting-header">
 					<h1>Good {this.state.day}!</h1>
 					<h4>It is currently {this.state.time} where you are.</h4>
 					<h4>Here is your To Do List.</h4>
-				</div>
+				</div>				
 			</header>
 		)
 	}

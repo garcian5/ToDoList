@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\public",
+    "\\src",
     "\\src\\components",
     "\\src\\contents",
     "\\src\\scripts"
   ],
+  "SelectedNode": "\\src\\components\\Header.js",
   "PreviewInSolutionExplorer": false
 }
