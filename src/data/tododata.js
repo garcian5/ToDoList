@@ -11,7 +11,7 @@ const toDoData = [
     },
     {
         id: 3,
-        text: "Clean gecko tank",
+        text: "Listen to Heather by Conan Gray",
         completed: false
     },
     {
@@ -21,7 +21,7 @@ const toDoData = [
     },
     {
         id: 5,
-        text: "Catch up on Arrested Development",
+        text: "Sleep",
         completed: false
     }
 ];

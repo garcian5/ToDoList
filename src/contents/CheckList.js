@@ -12,7 +12,7 @@ class CheckList extends React.Component {
         return (
             <div>
                 <div className="todo-item">                    
-                    <input className="chk-box" type="checkbox"
+                    <input type="checkbox"
                         checked={this.props.data.completed}
                         onChange={() => this.props.handleChange(this.props.data.id)}
                     />
