@@ -6,6 +6,7 @@ class CheckList extends React.Component {
         const completedStyle = {
             textDecoration: "line-through",
             fontStyle: "italic",
+            fontWeight: 300,
             color: "#C0C0C0"
         };
 

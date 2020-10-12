@@ -7,7 +7,7 @@ class ProgressReport extends React.Component {
     render() {
         return (
             <div>
-                <Button variant="primary">Button</Button>{' '}
+                <Button variant="primary" size="lg">Button</Button>{' '}
             </div>    
         )
     }

@@ -18,10 +18,11 @@ class Header extends React.Component {
 		let cLstStyles = {
 			backgroundColor: "rgba(186, 152, 3, 0.32)",
 			color: "#E53131",
-			margin: "auto",
+			margin: "0 auto",
 			height: 300,
 			width: 300,
 			borderRadius: "50%",
+			border: "none",
 			boxShadow: `0 0 20px 5px rgba(0, 0, 0, 0.15)`,			
 		};
 
@@ -59,11 +60,15 @@ class Header extends React.Component {
 
 	render() {			
 		return (
-			<header style={this.timeStyle()}>
-				<div className="greeting-header">
-					<p className="greeting">Good {this.state.day}!</p>
-					<p>It is currently {this.state.time} where you are.</p>
-					<p>Here is your To Do List.</p>
+			<header>
+				<div className="outer-btn-circle">
+					<button className = "greeting-btn" style={this.timeStyle()}>
+						<div className="greeting-header">
+							<p className="greeting">Good {this.state.day}!</p>
+							<p>It is currently {this.state.time} where you are.</p>
+							<p>Here is your To Do List.</p>
+						</div>
+					</button>
 				</div>
 			</header>
 		)
