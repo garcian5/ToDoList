@@ -22,7 +22,7 @@ class Header extends React.Component {
 			height: 300,
 			width: 300,
 			borderRadius: "50%",
-			boxShadow: `0 0 40px 10px rgba(0, 0, 0, 0.25)`,			
+			boxShadow: `0 0 20px 5px rgba(0, 0, 0, 0.15)`,			
 		};
 
 		// change background color depending on the times of the day
@@ -60,12 +60,10 @@ class Header extends React.Component {
 	render() {			
 		return (
 			<header style={this.timeStyle()}>
-				<div className="bbb">
-					<div className="greeting-header">
-						<p className="greeting">Good {this.state.day}!</p>
-						<p>It is currently {this.state.time} where you are.</p>
-						<p>Here is your To Do List.</p>
-					</div>				
+				<div className="greeting-header">
+					<p className="greeting">Good {this.state.day}!</p>
+					<p>It is currently {this.state.time} where you are.</p>
+					<p>Here is your To Do List.</p>
 				</div>
 			</header>
 		)
