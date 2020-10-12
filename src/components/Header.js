@@ -17,15 +17,22 @@ class Header extends React.Component {
 	timeStyle() {
 		let cLstStyles = {
 			backgroundColor: "rgba(186, 152, 3, 0.32)",
+			color: "#E53131",
 			margin: "auto",
-			height: 250,
-			width: 350,
-			borderRadius: "50%"
+			height: 300,
+			width: 300,
+			borderRadius: "50%",
+			boxShadow: `0 0 40px 10px rgba(0, 0, 0, 0.25)`,			
 		};
 
 		// change background color depending on the times of the day
-		if (this.state.day === "afternoon") cLstStyles.backgroundColor = "rgba(208, 6, 6, 0.32)";
-		else if (this.state.day === "night") cLstStyles.backgroundColor = "rgba(45, 4, 195, 0.32)";
+		if (this.state.day === "afternoon") {			
+			cLstStyles.backgroundColor = "rgba(208, 6, 6, 0.32)";
+			cLstStyles.color = "#38333F";
+		} else if (this.state.day === "night") {
+			cLstStyles.backgroundColor = "rgba(6, 1, 24, 0.5)";
+			cLstStyles.color = "#F8F8E5";
+		}
 
 		return cLstStyles;
     }
@@ -52,12 +59,14 @@ class Header extends React.Component {
 
 	render() {			
 		return (
-			<header style={this.timeStyle()}>				
-				<div className="greeting-header">
-					<h1>Good {this.state.day}!</h1>
-					<h4>It is currently {this.state.time} where you are.</h4>
-					<h4>Here is your To Do List.</h4>
-				</div>				
+			<header style={this.timeStyle()}>
+				<div className="bbb">
+					<div className="greeting-header">
+						<p className="greeting">Good {this.state.day}!</p>
+						<p>It is currently {this.state.time} where you are.</p>
+						<p>Here is your To Do List.</p>
+					</div>				
+				</div>
 			</header>
 		)
 	}

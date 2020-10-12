@@ -5,8 +5,9 @@
     "\\src",
     "\\src\\components",
     "\\src\\contents",
+    "\\src\\data",
     "\\src\\scripts"
   ],
-  "SelectedNode": "\\src\\components\\Header.js",
+  "SelectedNode": "\\src\\contents\\CheckList.js",
   "PreviewInSolutionExplorer": false
 }
