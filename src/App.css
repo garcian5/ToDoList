@@ -90,8 +90,9 @@ input[type=checkbox] {
 }
 
 .greeting-btn:hover {
+    z-index: 1;
     transform: scale(1.05, 1.05);
-    cursor: crosshair;
+    cursor: auto;
 }
 
 .greeting-btn::after {

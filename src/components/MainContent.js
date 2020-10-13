@@ -1,6 +1,5 @@
 import React from "react";
 import CheckList from "../contents/CheckList";
-import ProgressReport from "../contents/ProgressReport";
 import toDoData from "../data/tododata"
 
 class MainContent extends React.Component {
@@ -50,7 +49,6 @@ class MainContent extends React.Component {
                 <div className="todo-list">
                     {checkList}
                 </div>
-                <ProgressReport />
             </main>
         )
     }

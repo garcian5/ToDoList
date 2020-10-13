@@ -1,14 +1,20 @@
 import React from "react"
 import { timeOfDay } from "../scripts/timeOfDay";
 import { hrOfDay } from "../scripts/timeOfDay";
+import ProgressReport from "../contents/ProgressReport";
 
 class Header extends React.Component {	
 	constructor() {
 		super();
 		this.state = {
 			time: hrOfDay(),
-			day: timeOfDay()
-        }
+			day: timeOfDay(),
+			show: false
+		}
+
+		// bind these methods
+		this.modalShow = this.modalShow.bind(this);
+		this.modalHide = this.modalHide.bind(this);
 	}
 
 	/**
@@ -54,21 +60,31 @@ class Header extends React.Component {
 	 * this method will only run once
 	 * this method will call the updateTime() method and update our time state every 1 second.
 	 * */
-	componentDidMount() {
-		setInterval(() => this.updateTime(), 1000);
-    }
+	componentDidMount = () => setInterval(() => this.updateTime(), 1000);    
 
-	render() {			
+	/**
+	 * These methods handles the states in which the modal box should be shown or hidden
+	 * */
+	modalShow = () => this.setState({ show: true });	
+	modalHide = () => this.setState({ show: false });	
+
+	render() {
 		return (
 			<header>
 				<div className="outer-btn-circle">
-					<button className = "greeting-btn" style={this.timeStyle()}>
+					<button onClick={this.modalShow} className="greeting-btn" style={this.timeStyle()}>
 						<div className="greeting-header">
 							<p className="greeting">Good {this.state.day}!</p>
 							<p>It is currently {this.state.time} where you are.</p>
 							<p>Here is your To Do List.</p>
 						</div>
 					</button>
+					<ProgressReport
+						show={this.state.show}
+						onHide={this.modalHide}
+						tod={this.state.day}
+						hod={this.state.time}
+					/>
 				</div>
 			</header>
 		)
