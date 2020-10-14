@@ -61,6 +61,7 @@ class ProgressReport extends React.Component {
                 size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
+                dialogClassName="progress-report"
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
@@ -69,7 +70,7 @@ class ProgressReport extends React.Component {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <h4>Progress Summary</h4>
+                    <h4 className="progress-title">Progress Summary</h4>
                     <p>
                         You have completed {numTask <= 0 ? `nothing` : `${numTask} out of ${taskLength} tasks`} in the To Do List as of this {this.props.tod}.
                     </p>
@@ -85,9 +86,9 @@ class ProgressReport extends React.Component {
                     {numTask < taskLength ? <p>Here are your incomplete tasks: {incompleteTask}</p> : <p>Congratulations on completing all {taskLength} of your tasks!</p>}
                 </Modal.Body>
 
-                <Modal.Footer>
+                {/*<Modal.Footer>
                     <Button onClick={this.props.onHide}>Close</Button>
-                </Modal.Footer>
+                </Modal.Footer>*/}
 
             </Modal>
         )
