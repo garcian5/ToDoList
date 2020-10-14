@@ -1,6 +1,7 @@
 import React from "react";
 import CheckList from "../contents/CheckList";
-import toDoData from "../data/tododata"
+import toDoData from "../data/tododata";
+import Header from "../components/Header";
 
 class MainContent extends React.Component {
     constructor() {
@@ -43,9 +44,11 @@ class MainContent extends React.Component {
                 />
             )
         });
-
         return (
             <main>
+                <Header
+                    tasks={this.state.clist}
+                />
                 <div className="todo-list">
                     {checkList}
                 </div>

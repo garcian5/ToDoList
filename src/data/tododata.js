@@ -2,7 +2,7 @@ const toDoData = [
     {
         id: 1,
         text: "Take out the trash",
-        completed: true
+        completed: false
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const toDoData = [
     {
         id: 4,
         text: "Mow lawn",
-        completed: true
+        completed: false
     },
     {
         id: 5,

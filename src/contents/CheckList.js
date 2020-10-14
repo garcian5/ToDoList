@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-class CheckList extends React.Component {    
+class CheckList extends React.Component {
     render() {
         // styles that will be invoked if the task is completed
         const completedStyle = {
@@ -10,7 +10,7 @@ class CheckList extends React.Component {
             color: "#C0C0C0"
         };
 
-        return (
+        return (            
             <div>
                 <div className="todo-item">                    
                     <label style={this.props.data.completed ? completedStyle : null}>
@@ -20,7 +20,7 @@ class CheckList extends React.Component {
                         />
                         {this.props.data.text}
                     </label>
-                </div>
+                </div>                
             </div>
         )
     }

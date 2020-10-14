@@ -1,13 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\contents",
     "\\src\\data",
     "\\src\\scripts"
   ],
-  "SelectedNode": "\\src\\components\\MainContent.js",
+  "SelectedNode": "\\src\\data\\tododata.js",
   "PreviewInSolutionExplorer": false
 }

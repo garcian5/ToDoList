@@ -1,6 +1,5 @@
 import React from "react"
-import { timeOfDay } from "../scripts/timeOfDay";
-import { hrOfDay } from "../scripts/timeOfDay";
+import { timeOfDay, hrOfDay } from "../scripts/timeOfDay";
 import ProgressReport from "../contents/ProgressReport";
 
 class Header extends React.Component {	
@@ -84,6 +83,7 @@ class Header extends React.Component {
 						onHide={this.modalHide}
 						tod={this.state.day}
 						hod={this.state.time}
+						tasks={this.props.tasks}
 					/>
 				</div>
 			</header>
