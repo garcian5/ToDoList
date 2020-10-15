@@ -1,3 +1,11 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12ea1045-7177-4ea0-bf20-37bda28a9364/deploy-status)](https://app.netlify.com/sites/nheljee-todo/deploys)
+
+## About
+
+This is a To Do List App in which a user can check off a task and read their current progress report.<br />
+This application is in its early stages of development.
+___
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
