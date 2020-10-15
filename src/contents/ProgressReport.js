@@ -82,8 +82,8 @@ class ProgressReport extends React.Component {
                      * The second will render a list of incomplete tasks if there any.
                      * If there are no incomplete task(s) it will simply tell the user they have completed every task on the list.
                      * */}
-                    {numTask !== 0 ? <p>Here are your completed tasks: {completeTask}</p> : <p>You have not completed any of your tasks!</p>}
-                    {numTask < taskLength ? <p>Here are your incomplete tasks: {incompleteTask}</p> : <p>Congratulations on completing all {taskLength} of your tasks!</p>}
+                    {numTask !== 0 ? <span>Here are your completed tasks: {completeTask}</span> : <span>You have not completed any of your tasks!</span>}
+                    {numTask < taskLength ? <span>Here are your incomplete tasks: {incompleteTask}</span> : <span>Congratulations on completing all {taskLength} of your tasks!</span>}
                 </Modal.Body>
 
                 {/*<Modal.Footer>
