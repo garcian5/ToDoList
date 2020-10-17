@@ -14,6 +14,8 @@ class Header extends React.Component {
 		// bind these methods
 		this.modalShow = this.modalShow.bind(this);
 		this.modalHide = this.modalHide.bind(this);
+
+		this.wrapper = React.createRef();
 	}
 
 	/**

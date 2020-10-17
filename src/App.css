@@ -1,5 +1,4 @@
 .App {
-    margin: 0 auto;
     font-family: Quicksand, sans-serif;
 }
 
@@ -132,4 +131,19 @@ input[type=checkbox] {
 
 .modal-title {
     
+}
+
+/*-----------------------------------------------------
+    FOOTER STYLE
+-------------------------------------------------------*/
+footer {
+    background-color: #333;
+    color: #888;
+    padding: 30px;
+}
+
+/*trying to center author credits*/
+.author {
+    margin: 0 auto;
+    width: 30%;
 }
