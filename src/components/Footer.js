@@ -4,7 +4,15 @@ class Footer extends React.Component {
     render() {
         return (
             <footer>
-                <div className="author">
+                <div className="row">
+                    <div className="col">
+                        <ul className="social-links">
+                            <li><a href="https://github.com/garcian5/ToDoList" title="Nheljee's Github"><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href="https://www.linkedin.com/in/nheljee-rose-garcia/" title="Nheljee's LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="row">
                     <p>
                         Created by Nheljee Garcia.
                     </p>

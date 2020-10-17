@@ -143,7 +143,30 @@ footer {
 }
 
 /*trying to center author credits*/
-.author {
+.row {
     display: table;
     margin: auto;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+    font-size: 25px;
+    color: #888;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*get rid of title attribute in ion-icon so it won't show tool tip by mouse*/
+ion-icon{
+    pointer-events: none;
 }

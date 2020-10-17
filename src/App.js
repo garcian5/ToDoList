@@ -10,7 +10,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                {/*<a href="https://nheljee-dice-game.netlify.app/" className="nhel-game">Nheljee's game</a>*/}
+                <a href="https://nheljee-dice-game.netlify.app/" className="nhel-game">Nheljee's game</a>
                 {/*<Header />*/}
                 <MainContent />
                 <Footer />
