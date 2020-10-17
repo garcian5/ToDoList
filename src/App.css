@@ -2,6 +2,9 @@
     font-family: Quicksand, sans-serif;
 }
 
+main {
+    margin: 20px;
+}
 
 /*-----------------------------------------------------
     To do list box style
@@ -148,25 +151,35 @@ footer {
     margin: auto;
 }
 
+/*display items in columns*/
 .col {
     display: block;
     float: left;
     margin: 1% 0 1% 1.6%;
 }
 
+/*get rid of list styles for social links*/
 .social-links {
     list-style: none;
-    float: right;
-    font-size: 25px;
-    color: #888;
+    font-size: 35px;    
 }
 
+/*display links list as an inline block and make sure they're side by side*/
 .social-links li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 20px;    
+}
+
+.social-links li a {
+    color: #888;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links li a:hover {
+    color: #545454;
 }
 
 /*get rid of title attribute in ion-icon so it won't show tool tip by mouse*/
-ion-icon{
+ion-icon {
     pointer-events: none;
-}
+}    

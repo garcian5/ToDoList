@@ -9,9 +9,7 @@ import Footer from './components/Footer';
 class App extends React.Component {      
     render() {
         return (
-            <div className="App">
-                <a href="https://nheljee-dice-game.netlify.app/" className="nhel-game">Nheljee's game</a>
-                {/*<Header />*/}
+            <div className="App">                
                 <MainContent />
                 <Footer />
             </div>
