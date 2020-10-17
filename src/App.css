@@ -144,6 +144,6 @@ footer {
 
 /*trying to center author credits*/
 .author {
-    margin: 0 auto;
-    width: 30%;
+    display: table;
+    margin: auto;
 }
