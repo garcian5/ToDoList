@@ -79,7 +79,8 @@ class GreetingClock extends React.Component {
 		return (
 			<div ref={this.wrapper}>
 				<div className="outer-btn-circle">
-					<button title="Click for Progress Report" onClick={this.modalShow} className="greeting-btn" style={this.timeStyle()}>
+					<button title="Click for Progress Report"
+						onClick={this.modalShow} className="greeting-btn" style={this.timeStyle()}>
 						<div className="greeting-header">
 							<p className="greeting">Good {this.state.day}!</p>
 							<p>It is currently {this.state.time} where you are.</p>

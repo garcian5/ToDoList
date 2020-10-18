@@ -184,4 +184,30 @@ footer {
 /*get rid of title attribute in ion-icon so it won't show tool tip by mouse*/
 ion-icon {
     pointer-events: none;
-}    
+}
+
+/*-----------------------------------------------------
+    ADD TO DO STYLE
+-------------------------------------------------------*/
+.add-todo {
+    margin-top: 70px;    
+}
+
+.addtodo-btn {
+    background-color: #fb9d9d;
+    border: 0.5px solid #fb9d9d;
+    border-radius: 15%;
+    font-size: 35px;
+    padding: 13px 30px 7px;
+    box-shadow: 5px 5px 5px rgba(251, 157, 157, 0.55);
+    color: #5e5e5e;
+    transition: all 0.2s ease-in-out;
+}
+
+.addtodo-btn:focus{
+    outline: none;
+}
+
+.addtodo-btn:hover {
+    background-color: #fa8585;
+}

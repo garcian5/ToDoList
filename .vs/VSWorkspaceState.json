@@ -1,13 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\contents",
     "\\src\\data",
     "\\src\\scripts"
   ],
-  "SelectedNode": "\\public\\index.html",
+  "SelectedNode": "\\src\\contents\\ProgressReport.js",
   "PreviewInSolutionExplorer": false
 }

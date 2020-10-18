@@ -10,14 +10,15 @@ class MainContent extends React.Component {
             clist: toDoData // copy of tododata in object state
         }
         // bind the method made to our own class to avoid a typeerror
-        this.handleChange = this.handleChange.bind(this);
+        //this.handleChange = this.handleChange.bind(this);
     }
 
     /**
      * A method that handles the if the checkbox is clicked or not.
      * Changes the state of the box to clicked or not clicked.
+     * changed to arrow function so we don't have to bind the method
      * */
-    handleChange(lst_id) {
+    handleChange = (lst_id) => {
         this.setState(prevState => {
             const updatedTodos = prevState.clist.map(clist => {
                 // return the same clist object with flipped completed value if the id is the same
@@ -33,8 +34,6 @@ class MainContent extends React.Component {
     }
 
     render() {
-        //console.log(this.state.clist.length);
-        
         // map through the todo list data and pass them as props
         // to the checklist component
         const checkList = this.state.clist.map((data) => {
@@ -46,14 +45,13 @@ class MainContent extends React.Component {
                 />
             )
         });
-        
         return (
             <main>
                 <GreetingClock
                     tasks={this.state.clist}
                 />
                 <div className="todo-list">
-                    {checkList.length > 0 ? checkList : <p>You have no To Dos.</p>}
+                    {checkList}
                 </div>
             </main>
         )
