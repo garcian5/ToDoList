@@ -1,9 +1,9 @@
-import React from "react";
+import React, {Component} from "react";
 import CheckList from "../contents/CheckList";
 import GreetingClock from "../components/GreetingClock";
 import AddToDo from "../contents/AddToDo"
 
-class MainContent extends React.Component {
+class MainContent extends Component {
     constructor() {
         super();
         this.state = {
@@ -92,7 +92,7 @@ class MainContent extends React.Component {
 
                 <div className="outer-btn-circle add-todo">
                     <button className="addtodo-btn" onClick={this.handleClick}>
-                        <ion-icon name="add-outline"></ion-icon>
+                        <ion-icon name="add-outline" class="ion-plus"></ion-icon>
                     </button>
                     <br />
                 </div>

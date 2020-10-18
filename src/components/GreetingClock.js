@@ -1,8 +1,8 @@
-import React, { createRef } from "react";
+import React, { Component, createRef } from "react";
 import { timeOfDay, hrOfDay } from "../scripts/timeOfDay";
 import ProgressReport from "../contents/ProgressReport";
 
-class GreetingClock extends React.Component {
+class GreetingClock extends Component {
 	constructor() {
 		super();
 		this.state = {

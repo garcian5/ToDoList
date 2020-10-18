@@ -1,5 +1,6 @@
 .App {
     font-family: Quicksand, sans-serif;
+    min-height: 100%;
 }
 
 main {
@@ -142,15 +143,20 @@ input[type=checkbox] {
     FOOTER STYLE
 -------------------------------------------------------*/
 footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
     background-color: #333;
     color: #888;
-    padding: 30px;
+    padding: 20px 3px 5px;
 }
 
 /*trying to center author credits*/
 .row {
     display: table;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /*display items in columns*/
@@ -194,14 +200,17 @@ ion-icon {
 }
 
 .addtodo-btn {
-    background-color: #fb9d9d;
-    border: 0.5px solid #fb9d9d;
-    border-radius: 15%;
-    font-size: 35px;
+    background-color: #9dddfb;
+    border: 0.5px solid #9dddfb;
+    border-radius: 10%;
     padding: 13px 30px 7px;
-    box-shadow: 5px 5px 5px rgba(251, 157, 157, 0.55);
-    color: #5e5e5e;
+    box-shadow: 5px 5px 5px rgba(157, 221, 251, 0.55);
+    color: #454545;
     transition: all 0.2s ease-in-out;
+}
+
+.ion-plus {
+    font-size: 40px;
 }
 
 .addtodo-btn:focus{
@@ -209,5 +218,5 @@ ion-icon {
 }
 
 .addtodo-btn:hover {
-    background-color: #fa8585;
+    background-color: #8ed8fa;
 }
