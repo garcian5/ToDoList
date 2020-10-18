@@ -1,6 +1,3 @@
-/*const toDoData = [
-];*/
-
 const toDoData = [
     {
         id: 1,

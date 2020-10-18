@@ -15,8 +15,9 @@ class CheckList extends React.Component {
                 <div className="todo-item">                    
                     <label style={this.props.data.completed ? completedStyle : null}>
                         <input type="checkbox"
+                            name={this.props.data.id}
                             checked={this.props.data.completed}
-                            onChange={() => this.props.handleChange(this.props.data.id)}
+                            onChange={this.props.handleChange}
                         />
                         {this.props.data.text}
                     </label>
