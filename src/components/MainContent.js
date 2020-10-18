@@ -1,7 +1,7 @@
 import React from "react";
 import CheckList from "../contents/CheckList";
 import toDoData from "../data/tododata";
-import Header from "../components/Header";
+import GreetingClock from "../components/GreetingClock";
 
 class MainContent extends React.Component {
     constructor() {
@@ -46,7 +46,7 @@ class MainContent extends React.Component {
         });
         return (
             <main>
-                <Header
+                <GreetingClock
                     tasks={this.state.clist}
                 />
                 <div className="todo-list">

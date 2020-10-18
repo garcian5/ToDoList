@@ -2,12 +2,13 @@ import React from "react"
 import { timeOfDay, hrOfDay } from "../scripts/timeOfDay";
 import ProgressReport from "../contents/ProgressReport";
 
-class Header extends React.Component {	
+class GreetingClock extends React.Component {
 	constructor() {
 		super();
 		this.state = {
 			time: hrOfDay(),
 			day: timeOfDay(),
+			interval: "",
 			show: false
 		}
 
@@ -30,11 +31,11 @@ class Header extends React.Component {
 			width: 300,
 			borderRadius: "50%",
 			border: "none",
-			boxShadow: `0 0 20px 5px rgba(0, 0, 0, 0.15)`,			
+			boxShadow: `0 0 20px 5px rgba(0, 0, 0, 0.15)`,
 		};
 
 		// change background color depending on the times of the day
-		if (this.state.day === "afternoon") {			
+		if (this.state.day === "afternoon") {
 			cLstStyles.backgroundColor = "rgba(208, 6, 6, 0.32)";
 			cLstStyles.color = "#38333F";
 		} else if (this.state.day === "night") {
@@ -43,7 +44,7 @@ class Header extends React.Component {
 		}
 
 		return cLstStyles;
-    }
+	}
 
 	/**
 	 * A method that updates time
@@ -61,7 +62,12 @@ class Header extends React.Component {
 	 * this method will only run once
 	 * this method will call the updateTime() method and update our time state every 1 second.
 	 * */
-	componentDidMount = () => setInterval(() => this.updateTime(), 1000);    
+	componentDidMount = () => this.setState({interval: setInterval(() => this.updateTime(), 1000)})	
+	/**
+	 * this method will clear the data from the set interval we called during mount.
+	 * to ensure there are no memory leaks.
+	 * */
+	componentWillUnmount = () => clearInterval(this.state.interval)
 
 	/**
 	 * These methods handles the states in which the modal box should be shown or hidden
@@ -93,4 +99,4 @@ class Header extends React.Component {
 	}
 }
 
-export default Header
+export default GreetingClock
