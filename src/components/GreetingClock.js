@@ -1,4 +1,4 @@
-import React from "react"
+import React, { createRef } from "react";
 import { timeOfDay, hrOfDay } from "../scripts/timeOfDay";
 import ProgressReport from "../contents/ProgressReport";
 
@@ -16,7 +16,7 @@ class GreetingClock extends React.Component {
 		this.modalShow = this.modalShow.bind(this);
 		this.modalHide = this.modalHide.bind(this);
 
-		this.wrapper = React.createRef();
+		this.wrapper = createRef();
 	}
 
 	/**
@@ -77,7 +77,7 @@ class GreetingClock extends React.Component {
 
 	render() {
 		return (
-			<header>
+			<div ref={this.wrapper}>
 				<div className="outer-btn-circle">
 					<button title="Click for Progress Report" onClick={this.modalShow} className="greeting-btn" style={this.timeStyle()}>
 						<div className="greeting-header">
@@ -94,7 +94,7 @@ class GreetingClock extends React.Component {
 						tasks={this.props.tasks}
 					/>
 				</div>
-			</header>
+			</div>
 		)
 	}
 }

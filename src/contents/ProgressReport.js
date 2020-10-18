@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createRef } from "react";
 //import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ProgressSummary from "./ProgressSummary";
@@ -9,6 +9,11 @@ import ProgressSummary from "./ProgressSummary";
  * From: https://react-bootstrap.github.io/components/modal/
  * */
 class ProgressReport extends React.Component {
+
+    constructor() {
+        super();
+        this.wrapper = createRef();
+    }
 
     /**
      * This method calculates the number of completed/checked tasks
@@ -90,7 +95,7 @@ class ProgressReport extends React.Component {
                     <Button onClick={this.props.onHide}>Close</Button>
                 </Modal.Footer>*/}
 
-            </Modal>
+                </Modal>
         )
     }
 }

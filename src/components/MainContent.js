@@ -33,6 +33,8 @@ class MainContent extends React.Component {
     }
 
     render() {
+        //console.log(this.state.clist.length);
+        
         // map through the todo list data and pass them as props
         // to the checklist component
         const checkList = this.state.clist.map((data) => {
@@ -44,13 +46,14 @@ class MainContent extends React.Component {
                 />
             )
         });
+        
         return (
             <main>
                 <GreetingClock
                     tasks={this.state.clist}
                 />
                 <div className="todo-list">
-                    {checkList}
+                    {checkList.length > 0 ? checkList : <p>You have no To Dos.</p>}
                 </div>
             </main>
         )

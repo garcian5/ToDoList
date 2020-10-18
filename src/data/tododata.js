@@ -1,4 +1,7 @@
 const toDoData = [
+];
+
+/*const toDoData = [
     {
         id: 1,
         text: "Take out the trash",
@@ -24,6 +27,6 @@ const toDoData = [
         text: "Sleep",
         completed: false
     }
-];
+];*/
 
 export default toDoData;
