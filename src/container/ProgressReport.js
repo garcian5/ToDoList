@@ -52,10 +52,10 @@ function ProgressReport(props) {
             onHide={props.onHide}
             tod={props.tod}
             hod={props.hod}
-            numTask={numTask}
-            taskLength={taskLength}
-            incompleteTask={incompleteTask}
-            completeTask={completeTask}
+            numtask={numTask}
+            tasklength={taskLength}
+            incompletetask={incompleteTask}
+            completetask={completeTask}
         />
     )
 }
