@@ -7,7 +7,7 @@ import Modal from 'react-bootstrap/Modal';
  * Will return a message if it is empty.
  * */
 function ProgressModal(props) {
-    if (props.taskLength > 0) {
+    if (props.tasklength > 0) {
         return (
             <section>
                 <Modal
