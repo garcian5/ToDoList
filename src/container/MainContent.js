@@ -70,7 +70,7 @@ class MainContent extends Component {
     /**
      * This method handles plus button click
      * */
-    handleClick = () => this.setState({ btnClicked: !this.state.btnClicked, isValid: true })
+    handleClick = () => this.setState({ btnClicked: !this.state.btnClicked, enteredToDo: "", isValid: true })
 
     render() {
         // map through the todo list data and pass them as props
@@ -101,6 +101,7 @@ class MainContent extends Component {
                     <AddToDo
                         handleChange={this.handleChange}
                         handleSubmit={this.handleSubmit}
+                        value={this.enteredToDo}
                     />
                     : null}
 
