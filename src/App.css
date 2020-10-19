@@ -1,11 +1,30 @@
-.App {
-    font-family: Quicksand, sans-serif;
-    min-height: 100vh;
+/*box sizing*/
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
     position: relative;
 }
 
+.App {
+    font-family: Quicksand, sans-serif;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 200px; /* height of your footer */
+}
+
 main {
-    margin: 20px;
+    margin: 50px;
 }
 p {
     text-align: center;
@@ -143,10 +162,9 @@ input[type=checkbox] {
 /*-----------------------------------------------------
     FOOTER STYLE
 -------------------------------------------------------*/
-footer {    
+footer {
     position: absolute;
     width: 100%;
-    left: 0;
     bottom: 0;
     text-align: center;
     background-color: #333;
