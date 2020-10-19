@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import CheckList from "../contents/CheckList";
-import GreetingClock from "../components/GreetingClock";
-import AddToDo from "../contents/AddToDo"
+import CheckList from "../presentational/CheckList";
+import GreetingClock from "../container/GreetingClock";
+import AddToDo from "../presentational/AddToDo"
 
 class MainContent extends Component {
     constructor() {

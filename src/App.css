@@ -200,17 +200,17 @@ ion-icon {
 }
 
 .addtodo-btn {
-    background-color: #9dddfb;
-    border: 0.5px solid #9dddfb;
-    border-radius: 10%;
-    padding: 13px 30px 7px;
-    box-shadow: 5px 5px 5px rgba(157, 221, 251, 0.55);
-    color: #454545;
+    background-color: whitesmoke;
+    border: 2px solid #066693;
+    width: 20%;
+    padding: 5px 10px 1px;
+    box-shadow: 3px 2px 5px rgba(0, 7, 10, 0.5);
     transition: all 0.2s ease-in-out;
 }
 
 .ion-plus {
     font-size: 40px;
+    color: #04415d;
 }
 
 .addtodo-btn:focus{
@@ -218,5 +218,5 @@ ion-icon {
 }
 
 .addtodo-btn:hover {
-    background-color: #8ed8fa;
+    background-color: #d3f0fd;
 }
