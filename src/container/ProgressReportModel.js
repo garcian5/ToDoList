@@ -1,6 +1,6 @@
 import React from "react";
-import ProgressModal from "../presentational/ProgressModal";
-import ProgressSummary from "../presentational/ProgressSummary";
+import ProgressModal from "../presentational/report/ProgressModal";
+import ProgressSummary from "../presentational/report/ProgressSummary";
 
 function ProgressReport(props) {
     /**

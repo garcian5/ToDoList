@@ -1,6 +1,6 @@
 import React, { Component, createRef } from "react";
 import { timeOfDay, hrOfDay } from "../scripts/timeOfDay";
-import ProgressReport from "./ProgressReport";
+import ProgressReport from "./ProgressReportModel";
 
 class GreetingClock extends Component {
 	constructor() {

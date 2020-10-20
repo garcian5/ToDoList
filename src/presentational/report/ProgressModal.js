@@ -1,5 +1,11 @@
 import React from "react";
 import Modal from 'react-bootstrap/Modal';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+} from "react-router-dom";
 
 /**
  * From: https://react-bootstrap.github.io/components/modal/
@@ -9,7 +15,7 @@ import Modal from 'react-bootstrap/Modal';
 function ProgressModal(props) {
     if (props.tasklength > 0) {
         return (
-            <section>
+            <Router>
                 <Modal
                     {...props}
                     size="lg"
@@ -41,7 +47,7 @@ function ProgressModal(props) {
                     </Modal.Body>
 
                 </Modal>
-            </section>
+            </Router>
         )
     } else {
         return (
