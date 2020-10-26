@@ -4,7 +4,7 @@ function ProgressSummary (props) {
     return (
         <section>
             <ul>
-                <li>{props.data.text}</li>
+                <li>{props.data.description}</li>
             </ul>                
         </section>
     )

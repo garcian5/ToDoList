@@ -2,7 +2,7 @@ import React from "react";
 import ProgressModal from "../presentational/report/ProgressModal";
 import ProgressSummary from "../presentational/report/ProgressSummary";
 
-function ProgressReport(props) {
+function ProgressReportModel(props) {
     /**
      * This method calculates the number of completed/checked tasks
      * returns: the number of the calculated completed tasks
@@ -29,7 +29,7 @@ function ProgressReport(props) {
             if (data.completed === trueOrFalse) {
                 return (
                     <ProgressSummary
-                        key={data.id}
+                        key={data._id}
                         data={data}
                     />
                 )
@@ -60,4 +60,4 @@ function ProgressReport(props) {
     )
 }
 
-export default ProgressReport;
+export default ProgressReportModel;
