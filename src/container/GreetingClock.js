@@ -1,6 +1,6 @@
 import React, { Component, createRef } from "react";
 import { timeOfDay, hrOfDay } from "../scripts/timeOfDay";
-import ProgressReportModel from "./ProgressReportModel";
+import ProgressReport from "./ProgressReportModel";
 
 class GreetingClock extends Component {
 	constructor() {
@@ -27,8 +27,8 @@ class GreetingClock extends Component {
 			backgroundColor: "rgba(186, 152, 3, 0.32)",
 			color: "#E53131",
 			margin: "0 auto",
-			height: 400,
-			width: 400,
+			height: 300,
+			width: 300,
 			borderRadius: "50%",
 			border: "none",
 			boxShadow: `0 0 20px 5px rgba(0, 0, 0, 0.15)`,
@@ -82,12 +82,12 @@ class GreetingClock extends Component {
 					<button title="Click for Progress Report"
 						onClick={this.modalShow} className="greeting-btn" style={this.timeStyle()}>
 						<div className="greeting-header">
-							<p className="greeting">Good {this.state.day} {this.props.username}!</p>
+							<p className="greeting">Good {this.state.day}!</p>
 							<p>It is currently {this.state.time} where you are.</p>
 							<p>Here is your To Do List.</p>
 						</div>
 					</button>
-					<ProgressReportModel
+					<ProgressReport
 						show={this.state.show}
 						onHide={this.modalHide}
 						tod={this.state.day}

@@ -1,13 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\backend",
-    "\\backend\\models",
-    "\\backend\\routes",
     "\\src",
     "\\src\\container",
-    "\\src\\presentational"
+    "\\src\\presentational",
+    "\\src\\scripts"
   ],
-  "SelectedNode": "\\src\\container\\GreetingClock.js",
+  "SelectedNode": "\\src\\presentational\\AddToDo.js",
   "PreviewInSolutionExplorer": false
 }

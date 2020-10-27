@@ -9,16 +9,18 @@ function CheckList(props) {
         color: "#C0C0C0"
     };
 
-    return (
-        <div className="todo-item">                    
-            <label style={props.data.completed ? completedStyle : null}>
-                <input type="checkbox"
-                    name={props.data._id}
-                    checked={props.data.completed}
-                    onChange={props.handleChange}
-                />
-                {props.data.description}
-            </label>
+    return (            
+        <div>
+            <div className="todo-item">                    
+                <label style={props.data.completed ? completedStyle : null}>
+                    <input type="checkbox"
+                        name={props.data.id}
+                        checked={props.data.completed}
+                        onChange={props.handleChange}
+                    />
+                    {props.data.text}
+                </label>
+            </div>                
         </div>
     )
 }
