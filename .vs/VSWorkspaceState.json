@@ -2,12 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\backend",
-    "\\backend\\models",
-    "\\backend\\routes",
     "\\src",
-    "\\src\\container",
     "\\src\\presentational"
   ],
-  "SelectedNode": "\\src\\container\\GreetingClock.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
