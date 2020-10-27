@@ -7,7 +7,7 @@ import Modal from 'react-bootstrap/Modal';
  * Will return a message if it is empty.
  * */
 function ProgressModal(props) {
-    if (props.tasklength > 0) {
+    if (props.taskLength > 0) {
         return (
             <section>
                 <Modal
@@ -25,7 +25,7 @@ function ProgressModal(props) {
 
                     <Modal.Body>
                         <p>
-                            You have completed {props.numtask <= 0 ? `nothing` : `${props.numtask} out of ${props.tasklength} tasks`} in the To Do List as of this {props.tod}.
+                            You have completed {props.numTask <= 0 ? `nothing` : `${props.numTask} out of ${props.taskLength} tasks`} in the To Do List as of this {props.tod}.
                         </p>
 
                         {/*
@@ -36,8 +36,8 @@ function ProgressModal(props) {
                         * If there are no incomplete task(s) it will simply tell the user they have completed every task on the list.
                         */}
 
-                        {props.numtask !== 0 ? <span>Here are your completed tasks: {props.completetask}</span> : <span>You have not completed any of your tasks!</span>}<br />
-                        {props.numtask < props.tasklength ? <span>Here are your incomplete tasks: {props.incompletetask}</span> : <span>Congratulations on completing all {props.tasklength} of your tasks!</span>}<br />
+                        {props.numTask !== 0 ? <span>Here are your completed tasks: {props.completeTask}</span> : <span>You have not completed any of your tasks!</span>}<br />
+                        {props.numTask < props.taskLength ? <span>Here are your incomplete tasks: {props.incompleteTask}</span> : <span>Congratulations on completing all {props.taskLength} of your tasks!</span>}<br />
                     </Modal.Body>
 
                 </Modal>
