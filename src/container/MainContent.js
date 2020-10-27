@@ -51,7 +51,8 @@ class MainContent extends Component {
      * @param {any} event
      */
     handleSubmit = (event) => {
-        event.preventDefault();
+        // to prevent the page from refreshing on submit
+        event.preventDefault(); 
 
         this.state.enteredToDo.trim() !== "" ?
             this.setState({
