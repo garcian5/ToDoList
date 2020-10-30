@@ -32,14 +32,6 @@ connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 })
 
-
-// routes
-app.get('/', (req, res) => {
-    res.send('Hello from MERN');
-});
-
-app.use(express.static('client/build'));
-
 // basically importing these files in our server
 const todosRouter = require('./routes/todos');
 const usersRouter = require('./routes/users');
